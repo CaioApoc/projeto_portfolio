@@ -659,7 +659,7 @@ footer a:hover {
   }
 
   .title-projects {
-    margin-top: 480px;
+    margin-top: 530px;
   }
 }
 
@@ -681,7 +681,7 @@ footer a:hover {
   }
 
   .title-projects {
-    margin-top: 700px;
+    margin-top: 750px;
   }
 
   .btns-project a {
@@ -707,7 +707,7 @@ footer a:hover {
 
 @media (max-width: 390px) {
   .title-projects {
-    margin-top: 750px;
+    margin-top: 800px;
   }
   #aboutMeP {
     margin-bottom: 200px;
@@ -751,7 +751,7 @@ footer a:hover {
   }
 
   .title-projects {
-    margin-top: 700px;
+    margin-top: 750px;
   }
 
   .btns-project a {
@@ -777,7 +777,7 @@ footer a:hover {
 
 @media (max-width: 330px) {
   .title-projects {
-    margin-top: 800px;
+    margin-top: 850px;
   }
 
   #aboutMeP {
