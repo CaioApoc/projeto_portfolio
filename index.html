@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://img.icons8.com/color/144/000000/widgetsmith.png" type="image/png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Caio Ribas - Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button onclick="toggleSideBar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <!-- <img
+          src="./assets/logo_gn.png"
+          class="img_logo_header"
+          alt="imagem da logo"
+        /> -->
+            <a class="meu_logo" href="">
+                < Caio Ribas />
+            </a>
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSideBar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <a href="#">Inicio</a>
+            <a onclick="toggleSideBar2()" href="#about">Sobre</a>
+            <a onclick="toggleSideBar2()" href="#projects">Projetos</a>
+            <a onclick="toggleSideBar2()" href="#skills">Skills</a>
+            <a onclick="toggleSideBar2()" href="#contacts">Contato</a>
+        </div>
+    </div>
+    <div tabindex="0" onclick="closeSideBar()" class="content" id="content">
+        <!-- ------  HELLO ------------------------------------------------------------------------------------------------------------------     -->
+        <div class="main-container">
+            <aside>
+                <h4>OLÁ, EU SOU</h4>
+                <h2>CAIO RIBAS</h2>
+                <h4>DESENVOLVEDOR FRONT-END</h4>
+
+                <div class="center">
+                    <a href="./assets/Meu curriculo.pdf" target="_blank" class="btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        Curriculo
+                    </a>
+                </div>
+            </aside>
+            <article>
+                <img src="./assets/Looper BG.png" alt="mulher_fundo" />
+            </article>
+        </div>
+        <!--   ABOUT ME ------------------------------------------------------------------------------------------------------------------- -->
+        <section class="about-me">
+            <div id="foto">
+                <div id="bar-foto"></div>
+            </div>
+            <div id="about">
+                <h3 class="d-400" id="aboutMeTitle">
+                    Sobre mim<spam class="point">.</spam>
+                </h3>
+                <p class="d-400" id="aboutMeP">
+                    Desenvolvedor Front-end com experiência no uso de HTML, CSS,
+                    JavaScript, React e BootStrap. Atualmente estou me dedicando a
+                    cursos de Desenvolvedor Full Stack bem como aos meus projetos no
+                    Github onde, além de aprimorar minhas habilidades, também almejo
+                    aprofundar meus conhecimentos sobre o Back-end e me tornar um Full
+                    Stack. Busco oportunidades que permitam me desenvolver tanto no
+                    âmbito profissional como no pessoal. Com 35 anos, brasileiro,
+                    morando em Portugal há 6 anos, já fiz de tudo um pouco! Desde cursar
+                    o início de uma graduação em ciência da computação até iniciar minha
+                    empresa de lava-jato. Hoje estou me dedicando a programação para
+                    migrar para a área de TI, que sempre esteve indiretamente presente
+                    na minha vida. Sou uma pessoa fácil de lidar, me adapto facilmente e
+                    estou sempre aberto a novas ideias.
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- PROJETOS ---------------------------------------------------------------------------------------------------------------------- -->
+    <section id="projects" class="s-projects">
+        <h3 class="title-projects d-200">Projetos<spam class="point">.</spam>
+        </h3>
+
+        <div class="container-projects d-300">
+            <div class="row-1">
+                <div class="cards-project d-300">
+                    <img src="./assets/projetos/flix_capa.png" alt="capa projeto flix" />
+
+                    <div class="project-info">
+                        <h4>Projeto Flix</h4>
+                        <p>
+                            Projeto todo em React onde fiz uma pagina consumindo a API do
+                            IMDB filmes.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://caio-flix.netlify.app/" target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/CaioApoc/projeto-flix"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-project">
+                    <img src="./assets/projetos/buscador2_capa.png" alt="" />
+
+                    <div class="project-info">
+                        <h4>Buscador de CEP</h4>
+                        <p>
+                            Projeto em React consumindo uma API de cep para consultas.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://caioapoc.github.io/projeto_criar_conta/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/CaioApoc/projeto-buscadorCEP"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-project">
+                    <img src="./assets/projetos/calc_capa.png" alt="" />
+
+                    <div class="project-info">
+                        <h4>Projeto Calculadora</h4>
+                        <p>Projeto onde tinha como objetivo criar uma calculadora</p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://caioapoc.github.io/projeto_calculadora/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/CaioApoc/projeto_calculadora"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="cards-project ">
+                    <img src="./assets/projetos/listadetarefa_capa.png" alt="lista de tarefa" />
+
+                    <div class="project-info">
+                        <h4>Lista de Tarefas</h4>
+                        <p>
+                            Projeto de uma lista de tarefas onde salvo os itens no
+                            LocalStore.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://caioapoc.github.io/projeto-ListaCompleta/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/CaioApoc/projeto-ListaCompleta"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-project">
+                    <img src="./assets/projetos/testecapa.jpg" alt="" />
+
+                    <div class="project-info">
+                        <h4>Tela de login</h4>
+                        <p>
+                            Projeto onde desenvolvi uma tela de login com todas validações.
+                        </p>
+                        <div class="btns-project">
+                            <a class="view-live" href="https://caioapoc.github.io/projeto_criar_conta/"
+                                target="_blank">View Live</a>
+                            <a class="github-repo" href="https://github.com/CaioApoc/projeto_criar_conta"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="cards-project">
+                    <div class="embreve">
+                        <p>EM BREVE</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="row-3">
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        
+          <a href="#" class="cards-project">
+            <div class="embreve">
+              <p>EM BREVE</p>
+            </div>
+          </a>
+        </div> -->
+        </div>
+        <input type="button" value="Mostrar +" id="btnMm" class="show-more d-200"></input>
+    </section>
+    <section id="skills" class="s-skills">
+        <article class="article-skills">
+            <h2 class="title-skills d-200">Skills<spam class="point">.</spam>
+            </h2>
+            <div class="skill__container d-400">
+                <ul class="skill__grid">
+                    <!--HTML-->
+                    <li>
+                        <i class="uil uil-html5-alt skill-icon"></i><br />
+                        HTML5
+                    </li>
+
+                    <!--CSS-->
+                    <li>
+                        <i class="uil uil-html3-alt skill-icon"></i> <br />
+                        CSS 3
+                    </li>
+
+                    <!--Bootsrap-->
+                    <li>
+                        <img class="booteste" src="./assets/bootstrap.ico" alt="" />
+                        <br />
+                        Bootstrap
+                    </li>
+
+                    <!--React-->
+                    <li>
+                        <i class="uil uil-react skill-icon"></i> <br />
+                        React
+                    </li>
+                    <!--Github-->
+                    <li>
+                        <i class="uil uil-github skill-icon"></i> <br />
+                        Github
+                    </li>
+                    <!--JavaScript-->
+                    <li>
+                        <i class="uil uil-java-script skill-icon"></i> <br />
+                        JavaScript
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section id="contacts" class="s-contact">
+        <article class="article-contact">
+            <h2 class="title-contact d-200">
+                Contato<spam class="point">.</spam>
+            </h2>
+
+            <div class="social-links d-400">
+                <a href="https://www.linkedin.com/in/caioribas/" target="_blank">
+                    <img src="./assets/linkedn.png" alt="LinkedIn" />
+                </a>
+
+                <a href="https://github.com/CaioApoc" target="_blank"><img src="./assets/github.png" alt="GitHub" />
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=351928024518" target="_blank"><img
+                        src="./assets/whatsapp.png" alt="WhatsApp" /></a>
+            </div>
+        </article>
+    </section>
+    <!-- <form action="https://formsubmit.co/eaacf9f9da9fb49bff64846718050bb4" method="POST" class="form d-400">
+                <label>
+                    <input type="text" name="Nome" placeholder="Seu nome" required autocomplete>
+                </label>
+      
+                <label>
+                    <input type="email" name="Email" placeholder="seuemail@email.com" required autocomplete="">
+                </label>
+      
+                <label>
+                    <textarea name="Mensagem" placeholder="Deixe sua mensagem"></textarea>
+                </label>
+      
+                <input type="hidden" name="_captcha" value="false">
+      
+                <button type="submit" >
+                    Enviar
+                </button>
+            </form> -->
+    <footer>
+        <a href="#">Back To Top <img src="./assets/right-arrow.png" alt="arrowUp" /></a>
+    </footer>
+    <div class="footerD">
+        <p>Desenvolvido por Caio Ribas &copy; 2022</p>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="./scroll.js"></script>
+<script src="./showMore.js"></script>
+
+</html>
